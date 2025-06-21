@@ -8,23 +8,27 @@ function getInputs() {
 // Addition
 document.getElementById("add").addEventListener("click", function() {
     const { input1, input2 } = getInputs(); // object destructuring:
-    console.log(input1 + input2); 
+    const sum = input1 + input2; 
+    document.getElementById("result").innerHTML = sum;
 })
 
 // Subtraction
 document.getElementById("subtract").addEventListener("click", function() {
     const {input1, input2} = getInputs();
-    console.log(input1 - input2);
+    const subtract = input1 - input2;
+    document.getElementById("result").innerHTML = subtract;
 })
 
 // Division
 document.getElementById("divide").addEventListener("click", function() {
     const {input1, input2} = getInputs();
-    console.log(input1 / input2);
+    const divide = input1 / input2;
+    document.getElementById("result").innerHTML = divide;
 })
 
 // Multiplication
 document.getElementById("multiply").addEventListener("click", function() {
     const {input1, input2} = getInputs();
-    console.log(input1 * input2);
+    const multiply = input1 * input2;
+    document.getElementById("result").innerHTML = multiply;
 })
